@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CC Truth Basket</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <img src="cc.png" id="logo" class="img-fluid" alt="Cinque Terre">
+            <h1>Welcome to Corpus Christi's Truth Basket!</h1>
+        </div>
+            
+        <div class="container">
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-info" onclick="document.getElementById('demo').innerHTML = getRndInteger(1,20)">Speak Lord!</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h2 id="demo"></h2>
+            </div>
+        </div>
+
+        <script>
+            function getRndInteger(min, max) {
+                var id = Math.floor(Math.random() * (max - min)) + min;
+                var verses = {
+                    1:'"Bear one another’s burdens, and so fulfill the law of Christ." - Galatians 6:2',
+                    2:'"And let us consider how to stir up one another to love and good works, not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near." - Hebrews 10:24-25',
+                    3:'"For where two or three are gathered in my name, there I am among them." - Matthew 18:20',
+                    4:'"And we urge you, admonish the idle, encourage the fainthearted, help the weak, be patient with them all." - 1 Thessalonians 5:14',
+                    5:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    6:'"And he said to him, “You shall love the Lord your God with all your heart and with all you soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself. On these two commandments depend all the Law and the Prophets." - Matthew 22:37-40',
+                    7:'"That there may be no division in the body, but that the members may have the same care for one another. If one member suffers, all suffer together; If one member is honoured, all rejoice together. Now you are the body of Christ and individually members of it." - 1 Corinthians 12:25-27',
+                    8:'"Bear one another’s burdens, and so fulfill the law of Christ."-1 John 1:7',
+                    9:'"But if we walk in the light, as he is in the light, we have fellowship with one another, and the blood of Jesus his Son cleanses us from all sin."-Galatians 6:2',
+                    10:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    11:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    12:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    13:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    14:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    15:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    16:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    17:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    18:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    19:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2',
+                    20:'"Bear one another’s burdens, and so fulfill the law of Christ."-Galatians 6:2'
+                };
+
+                for (var key in verses){
+                    if (key == id){
+                        return verses[key];
+                    }
+                }
+            }
+        </script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.6.2/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+    
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+</html>
