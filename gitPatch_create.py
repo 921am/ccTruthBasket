@@ -7,7 +7,7 @@ import os.path
 #git.Git("C:\\Users\\User\\git_projects").clone("https://github.com/921am/ccTruthBasket.git")
 
 # git commit before creating patch file
-# C:\\Users\\User\\git_projects\\ccTruthBasket
+# C:\\Users\\User\\git_projects\\ccTruthBasket\\
 commitPath = input("Enter repo to commit: ")
 repo = Repo(str(commitPath))
 repo.git.add(update=True)
